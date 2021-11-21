@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.B Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e079222103.js" crossorigin="anonymous"></script>
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    overflow-x: hidden;
+    background: #202731;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+.blue {
+    background: #3c31dd;
+}
+
+.red {
+    background: #dd3f31;
+}
+
+.pink {
+    background: #ff0066;
+}
+
+.dark {
+    background: #202731;
+}
+
+.custom-shape-divider-top-1637362222 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1637362222 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1637362222 .shape-fill {
+    fill: #202731;
+}
+
+.spacer {
+    aspect-ratio: 960/620;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.spacer2 {
+    aspect-ratio: 960/960;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.spacer3 {
+    aspect-ratio: 960/820;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.spacer4 {
+    aspect-ratio: 960/820;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.spacer5 {
+    aspect-ratio: 960/550;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('./layered-waves-haikei.svg');
+}
+.layer2 {
+    background-image: url('./layered-peaks-haikei.svg');
+}
+.layer3 {
+    background-image: url('./stacked-waves-haikei.svg');
+}
+.layer4 {
+    background-image: url('./stacked-steps-haikei.svg');
+}
+.layer5 {
+    background-image: url('./blob-scene-haikei.svg');
+}
+
+.main-name {
+    color: white;
+    text-transform: uppercase;
+    font-size: 10vw;
+}
+
+.main-para {
+    color: white;;
+    font-size: 3vw;
+    word-spacing: 10%;
+    font-weight: 600;
+}
+
+.spx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+}
+
+.push {
+    padding-top: 25vh;
+}
+
+.custom-shape-divider-top-1637401676 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1637401676 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.5px);
+    height: 170px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1637401676 .shape-fill {
+    fill: #202731;
+}
+
+.html-back {
+    background: #e34c26;
+}
+
+.html-text {
+    color: white;
+    font-size: 4.5vw;
+    word-spacing: 10%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.html-paragraph {
+    color: white;
+    font-size: 2.5vw;
+    word-spacing: 10%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.html-img {
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.css-img {
+    width: 20vw;
+    border-radius: 20px;
+}
+
+.js-img {
+    width: 37.5vw;
+    border-radius: 20px;
+}
+
+.css-text {
+    color: white;
+    font-size: 4.5vw;
+    word-spacing: 10%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.css-paragraph {
+    color: white;
+    font-size: 2.5vw;
+    word-spacing: 10%;
+    font-weight: 600;
+    text-align: center;
+} 
+
+.js-text {
+    color: white;
+    font-size: 4.5vw;
+     word-spacing: 10%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.js-paragraph {
+    color: white;
+    font-size: 2.5vw;
+    word-spacing: 10%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.custom-shape-divider-top-1637445103 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1637445103 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1637445103 .shape-fill {
+    fill: #A64019;
+}
+
+.htmlpage {
+    padding-top: 8vw;
+    transition:transform 0.25s ease;
+}
+
+.htmlpage:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+.media1 {
+    width: 30vw;
+    transition:transform 0.25s ease;
+}
+
+.media1:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+   
+.media2 {
+    padding-top: 4vw;
+    width: 10vw;
+    transition:transform 0.25s ease;
+}
+
+.media2:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+.javascript-code {
+    padding-top: 4vw;
+    width: 33.5vw;
+    transition:transform 0.25s ease;
+}
+
+.javascript-code:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+
+.javascript-code-2 {
+    padding-top: 6vw;
+    width: 18.5vw;
+    transition:transform 0.25s ease;
+}
+
+.javascript-code-2:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
+
+
+.custom-shape-divider-top-1637448828 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1637448828 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 104px;
+}
+
+.custom-shape-divider-top-1637448828 .shape-fill {
+    fill: #004CBB;
+}
+.vid {
+    width: 50vw;
+}
+.down {
+    padding-top: 6vw;
+}
+
+.custom-shape-divider-top-1637451724 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1637451724 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 146px;
+}
+
+.custom-shape-divider-top-1637451724 .shape-fill {
+    fill: #e4cc35;
+}
+
+.anchor {
+    margin-left: 1vw;
+    font-size: 2.4vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.anchor1 {
+    margin-left: 1vw;
+    font-size: 2.4vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.anchor2 {
+    margin-left: 1vw;
+    font-size: 2.4vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.anchor3 {
+    margin-left: 1vw;
+    font-size: 2.4vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.fab {
+    color: #fff;
+}
+
+.hover-anchor-icon:hover {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 0.6vw;
+}
+
+.hover-anchor-icon1 {
+    margin-top: 2.6vw;
+}
+
+.hover-anchor-icon1:hover {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 0.6vw;
+}
+
+.hover-anchor-icon2 {
+    margin-top: 2.6vw;
+}
+
+.hover-anchor-icon2:hover {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 0.6vw;
+}
+
+.hover-anchor-icon3 {
+    margin-top: 2.6vw;
+}
+
+.hover-anchor-icon3:hover {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 0.6vw;
+}
+
+</style>
+</head>
+<body>
+     <section class="red">
+            <h1 class="main-name">Dren Bajrami</h1>
+            <p class="main-para">I am a front-end webdeveloper, and i have been in the space 9 months here's what i can offer</p>
+            <img style="size: 20vw;" src="programming.png" alt="">
+            <div class="custom-shape-divider-top-1637362222">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+     </section>
+     <div class="spacer layer1">
+         <section>
+             <div class="push">
+                 <h1 class="spx">I Specialize in</h1>
+                 <img style="border-radius: 20px; width: 52vw;" src="programming-languages.jpeg" alt="">
+            </div>
+         </section>
+    </div>
+    <div class="spacer2 layer2">
+        <section class="htm-back">
+                <div class="custom-shape-divider-top-1637401676">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                   </svg>
+                </div>
+                <h1 class="html-text">HTML</h1>
+                <p class="html-paragraph">I write semantic and responsive html code and i use frameworks like bootstrap</p>
+                <img class="html-img" src="https://www.kindpng.com/picc/m/23-237381_java-html-language-logo-png-transparent-png.png" alt="">
+                <img class="htmlpage" style="width: 20vw;" src="./htmlpage.png">
+        </section>
+   </div>
+   <div class="spacer3 layer3">
+       <section>
+           <div class="custom-shape-divider-top-1637445103">
+               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                   <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+               </svg>
+           </div>
+           <img class="css-img" src="./css.png" alt="">
+           <h1 class="css-text">CSS</h1>
+           <p class="css-paragraph">I can style webpages by your liking and make them responsive with media quieries ,flexbox, grid or even columns in html, I also use other frameworks like haikei</p>
+           <img class="media1" src="./mediaquery.png" alt="">
+           <img class="media2" src="./code.png" alt="">
+       </section>
+   </div>
+   <div class="spacer4 layer4">
+       <section>
+           <div class="custom-shape-divider-top-1637448828">
+               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                   <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+               </svg>
+           </div>
+          <img class="js-img" src="./js.png" alt="">
+          <h1 class="js-text">JavaScript</h1>
+          <p class="js-paragraph">I use JS to make the website more interctive with smaller screen navigation bars, animations, text-animation etc</p>
+          <video loop="true" autoplay="true" autoplay class="vid" src="./screenrec.mp4" muted type="video/mp4"></video>
+          <img class="javascript-code" src="./javascript-code.png" alt="">
+          <video loop="true" autoplay="true" autoplay class="vid down" src="./aboutus.mp4" muted type="video/mp4"></video>
+          <img class="javascript-code-2" src="./javascript-code-2.png" alt="">
+        </section>
+   </div>
+   <div class="spacer5 layer5">
+       <section>
+        <div class="custom-shape-divider-top-1637451724">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div>
+            <div class="hover-anchor-icon">
+                <i class="fab fa-github fa-4x"></i><a class="anchor" target="_blank" href="https://github.com/Dren-B">Github</a></i>
+            </div>
+            <div class="hover-anchor-icon1">
+                <i class="fab fa-instagram fa-4x"></i><a class="anchor1" target="_blank" href="https://www.instagram.com/dren_bajramii/">Instagram</a>
+            </div>
+            <div class="hover-anchor-icon2">
+                <i class="fab fa-stack-overflow fa-4x"></i><a class="anchor2" target="_blank" href="https://stackoverflow.com/users/16177338/dren-b">Stack-Overflow</a>
+            </div>
+            <div class="hover-anchor-icon3">
+                <i class="fab fa-twitter fa-4x"></i><a class="anchor3" target="_blank" href="https://twitter.com/dren_bajrami">Twitter</a>
+            </div>
+        </div>
+       </section>
+   </div>
+
+</body>
+</html>
